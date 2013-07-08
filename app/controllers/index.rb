@@ -7,15 +7,11 @@ get '/skills/:skill' do
 end
 
 get '/meals' do
-  @meals = ["Spaghetti",
-            "Ravioli",
-            "Hummus and Veggies",
-            "Pizza",
-            "Falafel",
-            "Sushi",
-            "Linguini",
-            "Onigilli"]
   erb :meals
+end
+
+get '/random_meal' do
+  get_random_meal
 end
 
 
